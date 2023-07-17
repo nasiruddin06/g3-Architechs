@@ -31,10 +31,15 @@ nav li{
     text-decoration: none;
     color: #424242;
 }
+
+/*============ Banner css start============= */
+
+
 .banner-content{
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
+    margin-top: 30px;
 }
 .banner-title{
     font-size: 4rem;
@@ -43,4 +48,40 @@ nav li{
 }
 .banner-description{
     color: #727272;
+}
+.btn-primary{
+    background-color: #FF900E;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.banner img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* media queary small devices  */
+@media screen and (max-width:576px) {
+   header{
+    padding: 10px;
+   } 
+   nav, nav>ul{
+    flex-direction: column;
+   }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
 }
